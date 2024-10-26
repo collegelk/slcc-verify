@@ -7,12 +7,14 @@ table, th, td {
 </style>
 <body>
 
-  <script>
-    var password = prompt("Enter password to access the page:");
-    if (password !== "121121") {
+<script>
+    var validPasswords = ["qw1", "qw2", "qw3", "qw4", "qw5", "qw6"]; 
+    var password = prompt("Enter last three numbers of certificate ID to access the page:");
+    if (!validPasswords.includes(password)) {
         window.location.href = "https://collegelk.com";
     }
 </script>
+
 
 
 
